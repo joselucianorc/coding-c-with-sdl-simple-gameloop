@@ -73,7 +73,13 @@ void setup() {
 
 void update() {
 	//TODO: waste some time / sleep until we reach the frame target time	
-	while (!SDL_TICKS_PASSED(SDL_GetTicks(),last_frame_time + FRAME_TARGET_TIME));
+	//while (!SDL_TICKS_PASSED(SDL_GetTicks(),last_frame_time + FRAME_TARGET_TIME));
+
+	int time_to_wait = FRAME_TARGET_TIME - (SDL_GetTicks() - last_frame_time);
+
+	if (time_to_wait > 0 && time_to_wait <= FRAME_TARGET_TIME) {
+		SDL_Delay(time_to_wait);
+	}
 
 	//Get a delta time factor converted to seconds to be used to update my objects
 	float delta_time = (SDL_GetTicks() - last_frame_time) / 1000.0f;
