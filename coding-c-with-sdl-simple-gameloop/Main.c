@@ -75,10 +75,13 @@ void update() {
 	//TODO: waste some time / sleep until we reach the frame target time	
 	while (!SDL_TICKS_PASSED(SDL_GetTicks(),last_frame_time + FRAME_TARGET_TIME));
 
+	//Get a delta time factor converted to seconds to be used to update my objects
+	float delta_time = (SDL_GetTicks() - last_frame_time) / 1000.0f;
+
 	last_frame_time = SDL_GetTicks(); //Time elapsed in miliseconds since init
 
-	ball.x += 2;
-	ball.y += 2;
+	ball.x += 70 * delta_time;
+	ball.y += 50 * delta_time;
 }
 
 void render() {
@@ -105,7 +108,9 @@ void destroy_window() {
 }
 
 int main(int argc, char* args[]) {
-	//SDL_Init(SDL_INIT_EVERYTHING);
+
+	printf("Game Running ... \n");
+
 	game_is_running = initialize_window();
 
 	setup();
@@ -118,6 +123,5 @@ int main(int argc, char* args[]) {
 
 	destroy_window();
 
-	printf("Game Running ... \n");
 	return 0;
 }
