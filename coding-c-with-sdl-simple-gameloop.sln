@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "coding-c-with-sdl-simple-gameloop", "coding-c-with-sdl-simple-gameloop\coding-c-with-sdl-simple-gameloop.vcxproj", "{80E47F13-F8CE-4089-9FB3-CF8001079699}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "coding-c-with-sdl-simple-gameloop-v2", "coding-c-with-sdl-simple-gameloop-v2\coding-c-with-sdl-simple-gameloop-v2.vcxproj", "{74D64F1C-4C10-4567-B092-53625232410B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{80E47F13-F8CE-4089-9FB3-CF8001079699}.Release|x64.Build.0 = Release|x64
 		{80E47F13-F8CE-4089-9FB3-CF8001079699}.Release|x86.ActiveCfg = Release|Win32
 		{80E47F13-F8CE-4089-9FB3-CF8001079699}.Release|x86.Build.0 = Release|Win32
+		{74D64F1C-4C10-4567-B092-53625232410B}.Debug|x64.ActiveCfg = Debug|x64
+		{74D64F1C-4C10-4567-B092-53625232410B}.Debug|x64.Build.0 = Debug|x64
+		{74D64F1C-4C10-4567-B092-53625232410B}.Debug|x86.ActiveCfg = Debug|Win32
+		{74D64F1C-4C10-4567-B092-53625232410B}.Debug|x86.Build.0 = Debug|Win32
+		{74D64F1C-4C10-4567-B092-53625232410B}.Release|x64.ActiveCfg = Release|x64
+		{74D64F1C-4C10-4567-B092-53625232410B}.Release|x64.Build.0 = Release|x64
+		{74D64F1C-4C10-4567-B092-53625232410B}.Release|x86.ActiveCfg = Release|Win32
+		{74D64F1C-4C10-4567-B092-53625232410B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
